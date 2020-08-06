@@ -1,3 +1,12 @@
+"""
+Nombre: servidor.py
+Objetivo: implementa un servidor con socket
+Autor: tomado de https://realpython.com/python-sockets/
+04/08/2020
+"""
+
+
+
 import socket
 
 HOST = '192.168.0.109'  # Standard loopback interface address (localhost)
