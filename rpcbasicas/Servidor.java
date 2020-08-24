@@ -27,6 +27,11 @@ public class Servidor {
             };
 
             @Override
+            public float calculaArea(int n1) throws RemoteException {
+                return (float)(Math.PI * Math.pow(n1, 2));
+            };
+
+            @Override
             public float dividir(int numero1, int numero2) throws RemoteException {
                 return (float)numero1 / (float)numero2;
             };

@@ -9,4 +9,7 @@ public interface Interfaz extends Remote {
     int restar(int n1, int n2) throws RemoteException;
     int multiplicar(int n1, int n2) throws RemoteException;
     float dividir(int n1, int n2) throws RemoteException;
+    // Agregamos un nueva funcion
+    float calculaArea(int n1) throws RemoteException;
+
 }

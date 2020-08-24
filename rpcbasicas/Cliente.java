@@ -15,7 +15,7 @@ public class Cliente {
         int numero1, numero2 = 0,resultado = 0;
         float resultadod = 0.0f;
         boolean divide = false;
-        String menu = "\n\n------------------\n\n[-1] => Salir\n[0] => Sumar\n[1] => Restar\n[2] => Multiplicar\n[3] => Dividir\nElige: ";
+        String menu = "\n\n------------------\n\n[-1] => Salir\n[0] => Sumar\n[1] => Restar\n[2] => Multiplicar\n[3] => Dividir\n[4] => Area Circunferencia\nElige: ";
         do {
             System.out.println(menu);
 
@@ -34,7 +34,7 @@ public class Cliente {
             		numero1 = 0;
                 }
                 
-                if(eleccion != 0){
+                if(eleccion != 4){
                     System.out.println("Ingresa el número 2: ");
                     try{
                         numero2 = Integer.parseInt(sc.nextLine());
@@ -57,7 +57,8 @@ public class Cliente {
 	                    resultadod = interfaz.dividir(numero1, numero2);
                         break;
                     case 4:
-                        resultadod=interfaz.areacircunferencia(numero1);
+                        divide=true;
+                        resultadod=interfaz.calculaArea(numero1);
                         break;
 	            }
 
@@ -67,6 +68,7 @@ public class Cliente {
                 else{
                     System.out.println("Resultado => " + String.valueOf(resultado));
                 }
+                divide=false;
                 System.out.println("Presiona ENTER para continuar");
                 sc.nextLine();
             }
