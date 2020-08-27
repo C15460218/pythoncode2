@@ -1,0 +1,33 @@
+Started GET "/" for 127.0.0.1 at 2020-08-26 11:11:21 -0500
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/adrianrobles/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/adrianrobles/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.9ms | Allocations: 407)
+Completed 200 OK in 21ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 2494)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-26 11:49:46 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 190)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/adrianrobles/pythoncode/proyectoprueba/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.1
+Time: 2683ms
+Built at: 2020-08-26 11:49:50 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 4909ms (Views: 4902.2ms | ActiveRecord: 0.0ms | Allocations: 18230)
+
+
